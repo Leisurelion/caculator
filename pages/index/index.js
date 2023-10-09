@@ -16,17 +16,21 @@ Page({
   },
   clear(){
     this.setData({
-      numStr:"0",
+      points:"0",
+      state:"0",
+      time:"0",
       num1:"",
       num2:"",
+      numStr:"0",
+      sign:"",
       op:"",
       equals:"",
-      sign:""
+      tri:""
     });
   },
   op(e){
     var v = e.currentTarget.dataset.op;
-    if(this.data.time=="1"&&this.data.numStr != "0"){
+    if((this.data.time=="1")&&(this.data.numStr != "0")){
       var rs=0;
       var v1 = parseFloat(this.data.num1);
       var v2 = parseFloat(this.data.numStr);
